@@ -1,0 +1,32 @@
+#include "zcommon.acs"
+
+bool switchFlipped = FALSE;
+
+script 1 (void) {
+	//Loop(Ciclo) While
+	//Mientras la variable bool switchFlipped es false, eso es lo que dice el ciclo while
+	while (!switchFlipped) {
+		//Spawnea monstruos
+		Thing_SpawnFacing(1, 4, FALSE, 0);
+		//noFog en la funcion SpawnFacing es para que se cree
+		//el efecto de portal verde cuando spawneen los enemigos
+
+		Delay(35 *  3);
+		// 35 equivale a 1 segundo
+		// 35 * 3  equivale a 3 segundos, lo mismo para cualquier numero
+		//Esto crea un retraso de 3 segundos en el que aparecera un monstruo
+	}
+}
+
+script 2 (void) {
+	switchFlipped = TRUE;
+}
+
+script 3 (void) {
+	//Si i es menor a 4 (porque inicia en 0 el for)
+	for (int i = 0; i < 4; i++) {
+		Thing_SpawnFacing(2, 5, FALSE, 0);
+		Delay(35 * 3);
+	}
+	//Cuando i llegue a 4 (osea, spawnear 4 monstruos) el ciclo se detendra.
+}
