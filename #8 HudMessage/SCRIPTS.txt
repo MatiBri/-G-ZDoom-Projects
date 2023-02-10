@@ -1,0 +1,40 @@
+#include "zcommon.acs"
+
+//int contadorPociones;
+
+//Mensajes en el HUD
+//script 1 OPEN
+//{
+//	SetFont("BIGFONT");
+	//HudMessage(s:"Esto es una prueba."; HUDMSG_PLAIN, 1, CR_WHITE, 0.5, 0.1, 4.0);
+//	HudMessage(s:"Esto es un String bastante largo, solo para propositos de prueba."; HUDMSG_TYPEON, 1, CR_WHITE, 0.5, 0.1, 4.0, 0.05, 1.0);
+
+//	SetFont("BIGFONT");
+//	HudMessage(s:"Pociones: ", i:contadorPociones; HUDMSG_PLAIN | HUDMSG_NOTWITHFULLMAP | HUDMSG_NOTWITHOVERLAYMAP, 1, CR_BLUE, 0.9, 0.05, 1.0);
+
+//	HudMessage(s:"Colecciona las pociones."; HUDMSG_PLAIN | HUDMSG_NOTWITH3DVIEW, 2, CR_GOLD, 0.5, 0.05, 1.0);
+
+//	Delay(1); //Retraso de 1 tic
+
+//	Restart; //Ejecuta el script de nuevo
+
+	//El mensaje se ira apareciendo constantemente por cada pocion que el jugador tome
+//}
+
+//script 2 (void) { //Contador de pociones
+//	contadorPociones++;
+//}
+
+script 1 OPEN {
+
+//Tamano de la imagen: 448x96
+
+//Tamano al que se le ha cambiado: 1203x921
+	SetFont("LOGO");
+	SetHudSize(1203, 921, FALSE);
+	HudMessage(s:"A"; HUDMSG_PLAIN, 1, 0, 601.0, 180.0, 1.0); //La A es para mostrar una imagen, en este caso el LOGO
+
+	Delay(1);
+
+	Restart;
+}
