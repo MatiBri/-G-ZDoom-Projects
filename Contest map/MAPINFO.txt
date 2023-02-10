@@ -1,0 +1,9 @@
+map CMCPXX "Complex L/W"
+
+{
+	cluster = 1
+	music = "CMCMMS"
+	aircontrol = 0.5
+	gravity=900
+	next=MM2DW1
+}

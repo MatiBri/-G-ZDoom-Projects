@@ -1,0 +1,36 @@
+#include "zcommon.acs"
+Script 1 Enter
+{
+Switch (ACS_ExecuteWithResult(975))
+    {
+    Case 0: //Dm
+    If ((PlayerFrags() == (GetCVar("fraglimit") - 5)) && (GetCVar("fraglimit")>5) ) {SetMusic("CMCMNM");Terminate;}
+    Break;
+    If ((PlayerFrags() == (GetCVar("fraglimit") - 1)) && (GetCVar("fraglimit")>1) ) {SetMusic("CMCMNM");Terminate;}
+    Break;
+    Case 2: //LMS
+    If ((PlayerFrags() == (GetCVar("fraglimit") - 1)) && (GetCVar("fraglimit")>1) ) {SetMusic("CMCMNM");Terminate;}
+	Break;
+    Case 3: //Duel
+    If ((PlayerFrags() == (GetCVar("fraglimit") - 1)) && (GetCVar("fraglimit")>1) ) {SetMusic("CMCMNM");Terminate;}
+    Break;
+    Case 4: //TLMS
+	If ((PlayerFrags() == (GetCVar("fraglimit") - 1)) && (GetCVar("fraglimit")>1) ) {SetMusic("CMCMNM");Terminate;}
+    Break;
+    }
+Delay (1);
+Restart;
+}
+
+Script 2 OPEN
+{
+SetCvarString("mm8bdm_map_creator", "\csArtyom");
+SetCvarString("mm8bdm_map_icon", "MAPCARDI");
+SetCvarString("mm8bdm_map_background", "MAPCD10");
+SetCvarString("mm8bdm_map_musicname", "Piercing the sky");
+SetCvarString("mm8bdm_map_musiccomposer", "Shivam Dutt");
+SetCvarString("mm8bdm_map_musicgame", "VVVVVV");
+
+SetCvarString("mm8bdm_map_victorymusic", "SCPWIN");
+SetCvarString("mm8bdm_map_intensemusic", "CMCMIN");
+}
