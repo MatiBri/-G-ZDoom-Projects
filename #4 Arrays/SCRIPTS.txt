@@ -1,0 +1,48 @@
+#include "zcommon.acs"
+
+//Creo una lista
+//int miArray[5] = {1, 25, 3, 70, 100};
+//Hemos creado un array int que le dimos un tamano de 5, el cual le almacenamos 5 valores
+// del mismo tipo
+
+
+
+//Este script se ejecuta en el momento en que el jugador entre al mapa
+//Se inicia apenas empieza el nivel automaticamente. Esto quiere decir que
+//no necesitamos accionarlo en algun momento, ya que se ejecuta apenas inicia
+//el nivel
+//script 1 ENTER
+//{
+	//miArray[2] = 50; Esto mostrara solamente el numero 50 pero si lo borro
+
+	//Print(i: miArray[2]); //Mostrara el numero perteneciente a la columna del array
+//}
+
+
+//Creamos un Array para spawnear monstruos al azar
+
+//Los numeros son los spawn numbers de la wiki de Zdoom
+int monsterNumbers[3] = {1, 4, 5};
+
+//script 1 (void) {
+	// randomIndex = 1
+//	int randomIndex = Random(0, 2); //Creamos una variable randomIndex
+	//donde le pasamos los valores del Array del 0 al 2, que equivale a los valores
+	//1, 4 y 5 del Array
+	//randomIndex contara numeros al azar del 0 al 2
+
+	//monstersNumbers[1] -> 4
+//	Thing_SpawnFacing(1, monsterNumbers[randomIndex], FALSE, 0);
+	//Aca, pasamos los valores de la lista y los indexamos a la variable randomIndex, por lo que contara los valores 1, 4 y 5 del 0 al 2 perteneciente a la variable randomIndex
+
+
+//}
+
+
+script 2 (void) {
+	for (int i = 0; i < 3; i++) {
+		Thing_SpawnFacing(1, monsterNumbers[i], FALSE,0);
+
+		Delay(35 * 2);
+	}
+}
