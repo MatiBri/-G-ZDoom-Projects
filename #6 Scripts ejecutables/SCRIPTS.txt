@@ -1,0 +1,76 @@
+#include "zcommon.acs"
+
+//int contadorDeMuertes = 0;
+
+//Named scripts
+
+//script 1 (void) { //Monster Death Event
+//	contadorDeMuertes = contadorDeMuertes + 1;
+
+//	PrintBold(i:contadorDeMuertes);
+	//A los enemigos que les asigne este script, los contara dependiendo cuantos hayas matado
+
+	//Cuando el jugador entra al nivel, aparecera un monstruo y ejecutara el script 1
+//}
+
+//script 2 ENTER{ //Monster Spawn Inicilizaitation
+
+	// Spawn Former Human
+//	Thing_SpawnFacing(1, 4, 0, 666); //Spawnea un Former Human en el tag 1 y le damos un ID de 666
+
+	//Asigno al Former Human Script Execute Always
+//	SetThingSpecial(666, 226, 1, 0, 0 ,0); //Doy a un objeto con un especifico ID y le asigno un valor especial en el Action del objeto
+	//El argumento 0 es el numero de Script al que le estoy pasando
+	//En este caso, el script 1 de contador de muertes
+
+	//226 es el Action (Execute Always)
+	//666 es el ID del Former Human
+
+	//Cuando se muera, ejecutara el script 1
+//}
+
+//script 2 ENTER
+//{	//Inicializacion
+
+//}
+
+//script "Monster Death Event" (void)
+//{
+
+	//ACS_Execute(2, 0, 0, 0, 0); //Esto ejecutara el Script 2
+//}
+
+//script 2 (void) {
+
+
+//ACS_NamedExecute("Monster Death Event", 0, 0, 0, 0); //Esto ejecutara scripts que tengan de nombre un String
+//}
+
+
+
+//SCRIPT ACTIVATORS
+
+//
+
+script 1 (void) { //Monster Death Event
+	if(ActivatorTID() == 1337) //Si el ActivatorTID es igual a 1337
+	{
+		PrintBold(s: "El jugador mato al Former Human"); //Muestra este mensaje
+	}
+	else if (ActivatorTID() == 5)
+	{
+		PrintBold(s: "El Pinky mato al Former Human");
+	}
+
+}
+
+script 2 ENTER{ // Initialization
+	//En lo scripts ENTER, el jugador es el activador del script
+
+	//Cuando el jugador entre al nivel, se le dara un ID
+	Thing_ChangeTID(0, 1337);
+	//0 es el ID viejo, y el otro sera el nuevo ID que se le dara
+
+
+	//Cuando el jugador entre al nivel, se le asignara el ID en vez de 0(por defecto) al ID 1337
+}
