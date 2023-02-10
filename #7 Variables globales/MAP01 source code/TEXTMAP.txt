@@ -1,0 +1,761 @@
+namespace = "zdoom";
+thing // 0
+{
+x = 0.0;
+y = -96.0;
+angle = 90;
+type = 1;
+skill1 = true;
+skill2 = true;
+skill3 = true;
+skill4 = true;
+skill5 = true;
+skill6 = true;
+skill7 = true;
+skill8 = true;
+single = true;
+coop = true;
+dm = true;
+class1 = true;
+class2 = true;
+class3 = true;
+class4 = true;
+class5 = true;
+}
+
+thing // 1
+{
+x = -160.0;
+y = 320.0;
+angle = 315;
+type = 72;
+special = 226;
+arg0 = 1;
+skill1 = true;
+skill2 = true;
+skill3 = true;
+skill4 = true;
+skill5 = true;
+skill6 = true;
+skill7 = true;
+skill8 = true;
+single = true;
+coop = true;
+dm = true;
+class1 = true;
+class2 = true;
+class3 = true;
+class4 = true;
+class5 = true;
+}
+
+thing // 2
+{
+x = 160.0;
+y = 320.0;
+angle = 225;
+type = 72;
+special = 226;
+arg0 = 1;
+skill1 = true;
+skill2 = true;
+skill3 = true;
+skill4 = true;
+skill5 = true;
+skill6 = true;
+skill7 = true;
+skill8 = true;
+single = true;
+coop = true;
+dm = true;
+class1 = true;
+class2 = true;
+class3 = true;
+class4 = true;
+class5 = true;
+}
+
+thing // 3
+{
+x = -96.0;
+y = 96.0;
+angle = 90;
+type = 2003;
+skill1 = true;
+skill2 = true;
+skill3 = true;
+skill4 = true;
+skill5 = true;
+skill6 = true;
+skill7 = true;
+skill8 = true;
+single = true;
+coop = true;
+dm = true;
+class1 = true;
+class2 = true;
+class3 = true;
+class4 = true;
+class5 = true;
+}
+
+thing // 4
+{
+x = 96.0;
+y = 96.0;
+angle = 90;
+type = 2046;
+skill1 = true;
+skill2 = true;
+skill3 = true;
+skill4 = true;
+skill5 = true;
+skill6 = true;
+skill7 = true;
+skill8 = true;
+single = true;
+coop = true;
+dm = true;
+class1 = true;
+class2 = true;
+class3 = true;
+class4 = true;
+class5 = true;
+}
+
+vertex // 0
+{
+x = -32.0;
+y = 384.0;
+}
+
+vertex // 1
+{
+x = -32.0;
+y = 448.0;
+}
+
+vertex // 2
+{
+x = 32.0;
+y = 384.0;
+}
+
+vertex // 3
+{
+x = 32.0;
+y = 448.0;
+}
+
+vertex // 4
+{
+x = 128.0;
+y = 352.0;
+}
+
+vertex // 5
+{
+x = -128.0;
+y = 352.0;
+}
+
+vertex // 6
+{
+x = -192.0;
+y = 352.0;
+}
+
+vertex // 7
+{
+x = -192.0;
+y = 288.0;
+}
+
+vertex // 8
+{
+x = 192.0;
+y = 288.0;
+}
+
+vertex // 9
+{
+x = 128.0;
+y = 288.0;
+}
+
+vertex // 10
+{
+x = 192.0;
+y = 352.0;
+}
+
+vertex // 11
+{
+x = -128.0;
+y = 288.0;
+}
+
+vertex // 12
+{
+x = -192.0;
+y = 0.0;
+}
+
+vertex // 13
+{
+x = -64.0;
+y = -32.0;
+}
+
+vertex // 14
+{
+x = -64.0;
+y = -64.0;
+}
+
+vertex // 15
+{
+x = -32.0;
+y = -128.0;
+}
+
+vertex // 16
+{
+x = 32.0;
+y = -128.0;
+}
+
+vertex // 17
+{
+x = 64.0;
+y = -64.0;
+}
+
+vertex // 18
+{
+x = 64.0;
+y = -32.0;
+}
+
+vertex // 19
+{
+x = 192.0;
+y = 0.0;
+}
+
+vertex // 20
+{
+x = -32.0;
+y = -160.0;
+}
+
+vertex // 21
+{
+x = 32.0;
+y = -160.0;
+}
+
+linedef // 0
+{
+v1 = 0;
+v2 = 1;
+sidefront = 0;
+blocking = true;
+}
+
+linedef // 1
+{
+v1 = 2;
+v2 = 0;
+sidefront = 1;
+sideback = 2;
+twosided = true;
+}
+
+linedef // 2
+{
+v1 = 3;
+v2 = 2;
+sidefront = 3;
+blocking = true;
+}
+
+linedef // 3
+{
+v1 = 1;
+v2 = 3;
+sidefront = 4;
+special = 243;
+blocking = true;
+playeruse = true;
+}
+
+linedef // 4
+{
+v1 = 2;
+v2 = 4;
+sidefront = 5;
+blocking = true;
+}
+
+linedef // 5
+{
+v1 = 5;
+v2 = 0;
+sidefront = 6;
+blocking = true;
+}
+
+linedef // 6
+{
+v1 = 6;
+v2 = 5;
+sidefront = 7;
+blocking = true;
+}
+
+linedef // 7
+{
+v1 = 7;
+v2 = 6;
+sidefront = 8;
+blocking = true;
+}
+
+linedef // 8
+{
+v1 = 8;
+v2 = 9;
+sidefront = 9;
+sideback = 10;
+twosided = true;
+}
+
+linedef // 9
+{
+v1 = 9;
+v2 = 4;
+sidefront = 11;
+sideback = 12;
+twosided = true;
+}
+
+linedef // 10
+{
+v1 = 4;
+v2 = 10;
+sidefront = 13;
+blocking = true;
+}
+
+linedef // 11
+{
+v1 = 10;
+v2 = 8;
+sidefront = 14;
+blocking = true;
+}
+
+linedef // 12
+{
+v1 = 11;
+v2 = 7;
+sidefront = 15;
+sideback = 16;
+twosided = true;
+}
+
+linedef // 13
+{
+v1 = 5;
+v2 = 11;
+sidefront = 17;
+sideback = 18;
+twosided = true;
+}
+
+linedef // 14
+{
+v1 = 12;
+v2 = 7;
+sidefront = 19;
+blocking = true;
+}
+
+linedef // 15
+{
+v1 = 13;
+v2 = 12;
+sidefront = 20;
+blocking = true;
+}
+
+linedef // 16
+{
+v1 = 14;
+v2 = 13;
+sidefront = 21;
+blocking = true;
+}
+
+linedef // 17
+{
+v1 = 15;
+v2 = 14;
+sidefront = 22;
+blocking = true;
+}
+
+linedef // 18
+{
+v1 = 16;
+v2 = 15;
+sidefront = 23;
+sideback = 24;
+twosided = true;
+}
+
+linedef // 19
+{
+v1 = 17;
+v2 = 16;
+sidefront = 25;
+blocking = true;
+}
+
+linedef // 20
+{
+v1 = 18;
+v2 = 17;
+sidefront = 26;
+blocking = true;
+}
+
+linedef // 21
+{
+v1 = 19;
+v2 = 18;
+sidefront = 27;
+blocking = true;
+}
+
+linedef // 22
+{
+v1 = 8;
+v2 = 19;
+sidefront = 28;
+blocking = true;
+}
+
+linedef // 23
+{
+v1 = 20;
+v2 = 15;
+sidefront = 29;
+blocking = true;
+}
+
+linedef // 24
+{
+v1 = 21;
+v2 = 20;
+sidefront = 30;
+blocking = true;
+}
+
+linedef // 25
+{
+v1 = 16;
+v2 = 21;
+sidefront = 31;
+blocking = true;
+}
+
+linedef // 26
+{
+v1 = 13;
+v2 = 18;
+sidefront = 32;
+sideback = 33;
+twosided = true;
+}
+
+sidedef // 0
+{
+sector = 0;
+texturemiddle = "STARTAN2";
+offsetx_mid = 123.0;
+}
+
+sidedef // 1
+{
+sector = 0;
+}
+
+sidedef // 2
+{
+sector = 3;
+texturetop = "STARTAN2";
+offsetx_top = 41.0;
+offsety_top = -8.0;
+}
+
+sidedef // 3
+{
+sector = 0;
+texturemiddle = "STARTAN2";
+offsetx_mid = 41.0;
+}
+
+sidedef // 4
+{
+sector = 0;
+texturemiddle = "SW1STRTN";
+offsetx_mid = 0.0;
+offsety_mid = 56.0;
+}
+
+sidedef // 5
+{
+sector = 3;
+texturemiddle = "STARTAN2";
+offsetx_mid = 105.0;
+}
+
+sidedef // 6
+{
+sector = 3;
+texturemiddle = "STARTAN2";
+offsetx_mid = 22.0;
+}
+
+sidedef // 7
+{
+sector = 1;
+texturemiddle = "STARTAN2";
+offsetx_mid = 86.0;
+}
+
+sidedef // 8
+{
+sector = 1;
+texturemiddle = "STARTAN2";
+offsetx_mid = 22.0;
+}
+
+sidedef // 9
+{
+sector = 2;
+}
+
+sidedef // 10
+{
+sector = 3;
+texturetop = "STARTAN2";
+offsetx_top = 14.0;
+offsety_top = -24.0;
+}
+
+sidedef // 11
+{
+sector = 2;
+}
+
+sidedef // 12
+{
+sector = 3;
+texturetop = "STARTAN2";
+offsetx_top = 78.0;
+offsety_top = -24.0;
+}
+
+sidedef // 13
+{
+sector = 2;
+texturemiddle = "STARTAN2";
+offsetx_mid = -50.0;
+}
+
+sidedef // 14
+{
+sector = 2;
+texturemiddle = "STARTAN2";
+offsetx_mid = 14.0;
+}
+
+sidedef // 15
+{
+sector = 1;
+}
+
+sidedef // 16
+{
+sector = 3;
+texturetop = "STARTAN2";
+offsetx_top = 22.0;
+offsety_top = -24.0;
+}
+
+sidedef // 17
+{
+sector = 1;
+}
+
+sidedef // 18
+{
+sector = 3;
+texturetop = "STARTAN2";
+offsetx_top = 86.0;
+offsety_top = -24.0;
+}
+
+sidedef // 19
+{
+sector = 3;
+texturemiddle = "STARTAN2";
+offsetx_mid = 118.0;
+}
+
+sidedef // 20
+{
+sector = 3;
+texturemiddle = "STARTAN2";
+offsetx_mid = 114.0;
+}
+
+sidedef // 21
+{
+sector = 5;
+texturemiddle = "STARTAN2";
+offsetx_mid = 82.0;
+}
+
+sidedef // 22
+{
+sector = 5;
+texturemiddle = "STARTAN2";
+offsetx_mid = 10.0;
+}
+
+sidedef // 23
+{
+sector = 5;
+}
+
+sidedef // 24
+{
+sector = 4;
+}
+
+sidedef // 25
+{
+sector = 5;
+texturemiddle = "STARTAN2";
+offsetx_mid = 18.0;
+}
+
+sidedef // 26
+{
+sector = 5;
+texturemiddle = "STARTAN2";
+offsetx_mid = 114.0;
+}
+
+sidedef // 27
+{
+sector = 3;
+texturemiddle = "STARTAN2";
+offsetx_mid = 110.0;
+}
+
+sidedef // 28
+{
+sector = 3;
+texturemiddle = "STARTAN2";
+offsetx_mid = 78.0;
+}
+
+sidedef // 29
+{
+sector = 4;
+texturemiddle = "LITE3";
+}
+
+sidedef // 30
+{
+sector = 4;
+texturemiddle = "DOOR3";
+}
+
+sidedef // 31
+{
+sector = 4;
+texturemiddle = "LITE3";
+}
+
+sidedef // 32
+{
+sector = 5;
+}
+
+sidedef // 33
+{
+sector = 3;
+texturetop = "STARTAN2";
+offsetx_top = 114.0;
+}
+
+sector // 0
+{
+heightfloor = 0;
+heightceiling = 64;
+texturefloor = "FLOOR4_8";
+textureceiling = "CEIL3_5";
+lightlevel = 192;
+}
+
+sector // 1
+{
+heightfloor = 0;
+heightceiling = 80;
+texturefloor = "FLOOR4_8";
+textureceiling = "CEIL3_5";
+lightlevel = 192;
+}
+
+sector // 2
+{
+heightfloor = 0;
+heightceiling = 80;
+texturefloor = "FLOOR4_8";
+textureceiling = "CEIL3_5";
+lightlevel = 192;
+}
+
+sector // 3
+{
+heightfloor = 0;
+heightceiling = 128;
+texturefloor = "FLOOR4_8";
+textureceiling = "CEIL3_5";
+lightlevel = 192;
+}
+
+sector // 4
+{
+heightfloor = 0;
+heightceiling = 64;
+texturefloor = "FLOOR4_8";
+textureceiling = "CEIL3_5";
+lightlevel = 192;
+}
+
+sector // 5
+{
+heightfloor = 0;
+heightceiling = 64;
+texturefloor = "FLOOR4_8";
+textureceiling = "CEIL3_5";
+lightlevel = 192;
+}
+

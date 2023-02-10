@@ -1,0 +1,10 @@
+#include "zcommon.acs"
+
+//Variables globales
+global int 1: keensKilled;
+
+script 1 (void) {
+	keensKilled++;
+
+	Print(s: "Keens asesinados: ", i:keensKilled);
+}
