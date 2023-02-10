@@ -1,0 +1,35 @@
+#include "zcommon.acs"
+
+int score = 0;//Representara un puntaje
+
+//Variables booleanas
+bool switch1Flipped = FALSE;
+bool switch2Flipped = FALSE;
+
+script 1 (void) {
+
+	//Incremente la variable score
+	score = score + 1;
+	//score += 1; Cualquiera de estas dos opciones sirve
+
+	//Muestra el valor del score
+	Print(i:score);
+}
+
+//Argumentos o parametros, lo que hay en el parentesis
+script 2 (int cambiarNumero)
+{
+	Print(i: cambiarNumero);
+	if(cambiarNumero == 1)
+	{
+		switch1Flipped = TRUE;
+	}
+	else if (cambiarNumero == 2){
+		switch2Flipped = TRUE;
+	}
+
+	if(switch1Flipped == TRUE && switch2Flipped == TRUE)
+	{
+		Door_Open(1, 32, 0);
+	}
+}
