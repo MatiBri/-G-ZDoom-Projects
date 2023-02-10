@@ -1,0 +1,64 @@
+#include "zcommon.acs"
+
+int currentXP = 0;
+int currentLevel = 1;
+
+//Le doy 5 numeros dentro de las casillas del vector
+int xpToLevel[5] = { 0,		//No usado
+					 100,	//Nivel dos
+					 200,	//Nivel tres
+					 400,	//Nivel cuatro
+					 800,	//Nivel cinco, maximo nivel
+
+};
+
+script 1 ENTER
+{
+	//Esto mostrara un mensaje del nivel del jugador
+	HudMessage(s:"NIVEL ", d:currentLevel; HUDMSG_PLAIN, 1, CR_WHITE, 0.95, 0.05, 0);
+
+	if(currentLevel < 5)
+	{
+		//Esto mostrara un mensaje de la experiencia del jugador
+		HudMessage(s:"XP: ", d:currentXP, s:"/", d:xpToLevel[currentLevel]; HUDMSG_PLAIN, 2, CR_WHITE, 0.95, 0.1, 0);
+		// XP: 0/100
+	}
+
+	else
+	{
+		HudMessage(s:"XP: ", d:currentXP; HUDMSG_PLAIN, 2, CR_WHITE, 0.95, 0.1, 0);
+	//Los valores 0.95, 0.05 y 0 representan a los valores X, Y y Z
+	//X vale 0.95
+	//Y vale 0.05
+	//Z vale 0
+	//Esto sirve para mostrar un mensaje en la pantalla donde los valores de escala serviran como parametros para mostrar el mensaje
+	//en un cierto lugar de la pantalla
+	}
+
+}
+
+script 2 (int amount) {
+	//Incrementaremos la experiencia del jugador
+	//currentXP = currentXP + amount; OPCION 1, mas entendible
+	currentXP += amount; //OPCION 2, es lo mismo pero mas compleja, aun asi mas optima
+	Print(s:"GANASTE ", d:amount, s:" PUNTOS DE EXPERIENCIA");
+	//Ganara 75 XP por ejemplo
+
+	for (int i = 4; i >= currentLevel; i--) {
+		if(currentXP >= xpToLevel[i])
+		{
+			Print(s:"SUBISTE DE NIVEL!");
+			currentLevel = i + 1;
+			break; //Aca terminara el loop entero
+		}
+	}
+
+	ACS_Execute(1, 0,0,0,0);
+}
+
+//script 3 (void) {
+//	if(CurrentLevel >= 3)
+//		Door_Open()//
+//	else
+//		Print(s: "NECESITAS SER DE NIVEL 2 PARA ABRIR ESTA PUERTA");
+//}
