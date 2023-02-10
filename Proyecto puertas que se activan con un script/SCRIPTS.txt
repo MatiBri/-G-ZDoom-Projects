@@ -1,0 +1,15 @@
+#include "zcommon.acs"
+
+script 1 (void)
+{
+	//Presenta un mensaje en la pantalla
+	Print(s:"Se han abierto las puertas.");
+
+	//Puerta abierta
+
+	/*El siguiente script presentara
+	un codigo para accionar una puerta y que la misma
+	se abra al apretar el interruptor o boton.*/
+	Door_Open(1, 32, 0);
+	Door_Open(2, 5, 0);
+}
