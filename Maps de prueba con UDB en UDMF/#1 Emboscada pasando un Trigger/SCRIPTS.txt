@@ -1,0 +1,2 @@
+//Este mapa es para tener de ejemplo como un Trigger al pasar por encima de el
+//abrira una puerta (en este caso) y dentro de ella unos imps emboscaran al jugador
