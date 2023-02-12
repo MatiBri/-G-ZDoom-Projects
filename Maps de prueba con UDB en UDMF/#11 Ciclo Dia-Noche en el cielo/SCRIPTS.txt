@@ -1,0 +1,15 @@
+#include "zcommon.acs"
+
+script 1 OPEN {
+	//Se hace de noche
+	Light_Fade(100, 112, 35 * 5);
+
+	Delay(35 * 5); //Demora un poco hasta que...
+
+	//Se hace de dia
+	Light_Fade(100, 208, 35 * 5);
+
+	Delay(35 * 5); //Demora un poco hasta que...
+
+	Restart; //Reinicie el script y comience el ciclo de nuevo.
+}
