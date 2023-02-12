@@ -1,0 +1,18 @@
+#include "zcommon.acs"
+
+script 1 (void) {
+	//Lo que esto hace es spawnear un objeto apuntando a una direccion especifica
+	Thing_SpawnFacing(1, 2, 0, 999);
+	//Los ID son los ID para los Map Spots
+	Delay(75);
+
+	Thing_SpawnFacing(2, 2, 0, 999);
+	//El segundo parametro, es el tipo de monstruo que spawneara
+	Delay(75);
+
+	Thing_SpawnFacing(3, 2, 0, 999);
+
+	Delay(75);
+
+	Thing_SpawnFacing(4, 2, 0, 999);
+}
