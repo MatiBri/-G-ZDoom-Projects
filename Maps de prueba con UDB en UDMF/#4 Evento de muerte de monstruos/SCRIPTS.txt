@@ -1,0 +1,18 @@
+#include "zcommon.acs"
+
+script 1 (void) {
+
+	//Muestra un mensaje
+	Print(s:"Monstruo asesinado!\nCulminando nivel");
+
+	//Retraso corto que seguira luego del mensaje
+	Delay(100);
+
+	//Fin del nivel
+	Exit_Normal(0);
+}
+
+script 2 (void) {
+	//Abre la puerta con tag 1
+	Door_Open(1,20);
+}
