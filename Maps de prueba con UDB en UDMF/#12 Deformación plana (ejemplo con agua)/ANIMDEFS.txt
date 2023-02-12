@@ -1,0 +1,1 @@
+Warp2	Flat	NEWWATER	//1.0 Se puede usar un valor float para determinar la velocidad de la animación

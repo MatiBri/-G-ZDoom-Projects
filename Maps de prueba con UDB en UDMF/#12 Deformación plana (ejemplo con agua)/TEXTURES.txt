@@ -1,0 +1,4 @@
+Flat NEWWATER, 64, 64
+{
+	Patch FWATER1, 0, 0 //Los 0 son las dimensiones X e Y en la pantalla
+}
