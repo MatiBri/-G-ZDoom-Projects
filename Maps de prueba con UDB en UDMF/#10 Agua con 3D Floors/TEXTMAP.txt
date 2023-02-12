@@ -1,0 +1,302 @@
+namespace = "zdoom";
+thing // 0
+{
+x = -384.0;
+y = 0.0;
+angle = 0;
+type = 1;
+skill1 = true;
+skill2 = true;
+skill3 = true;
+skill4 = true;
+skill5 = true;
+skill6 = true;
+skill7 = true;
+skill8 = true;
+single = true;
+coop = true;
+dm = true;
+class1 = true;
+class2 = true;
+class3 = true;
+class4 = true;
+class5 = true;
+}
+
+vertex // 0
+{
+x = -448.0;
+y = -352.0;
+}
+
+vertex // 1
+{
+x = -448.0;
+y = 352.0;
+}
+
+vertex // 2
+{
+x = 448.0;
+y = -352.0;
+}
+
+vertex // 3
+{
+x = 448.0;
+y = 352.0;
+}
+
+vertex // 4
+{
+x = -320.0;
+y = 224.0;
+}
+
+vertex // 5
+{
+x = -320.0;
+y = -224.0;
+}
+
+vertex // 6
+{
+x = 320.0;
+y = -224.0;
+}
+
+vertex // 7
+{
+x = 320.0;
+y = 224.0;
+}
+
+vertex // 8
+{
+x = 512.0;
+y = 32.0;
+}
+
+vertex // 9
+{
+x = 512.0;
+y = 64.0;
+}
+
+vertex // 10
+{
+x = 544.0;
+y = 32.0;
+}
+
+linedef // 0
+{
+v1 = 0;
+v2 = 1;
+sidefront = 0;
+blocking = true;
+}
+
+linedef // 1
+{
+v1 = 2;
+v2 = 0;
+sidefront = 1;
+blocking = true;
+}
+
+linedef // 2
+{
+v1 = 3;
+v2 = 2;
+sidefront = 2;
+blocking = true;
+}
+
+linedef // 3
+{
+v1 = 1;
+v2 = 3;
+sidefront = 3;
+blocking = true;
+}
+
+linedef // 4
+{
+v1 = 4;
+v2 = 5;
+sidefront = 4;
+sideback = 5;
+twosided = true;
+}
+
+linedef // 5
+{
+v1 = 5;
+v2 = 6;
+sidefront = 6;
+sideback = 7;
+twosided = true;
+}
+
+linedef // 6
+{
+v1 = 6;
+v2 = 7;
+sidefront = 8;
+sideback = 9;
+twosided = true;
+}
+
+linedef // 7
+{
+v1 = 7;
+v2 = 4;
+sidefront = 10;
+sideback = 11;
+twosided = true;
+}
+
+linedef // 8
+{
+v1 = 8;
+v2 = 9;
+sidefront = 12;
+blocking = true;
+}
+
+linedef // 9
+{
+v1 = 10;
+v2 = 8;
+sidefront = 13;
+blocking = true;
+}
+
+linedef // 10
+{
+v1 = 9;
+v2 = 10;
+sidefront = 14;
+special = 160;
+arg0 = 1;
+arg1 = 2;
+arg3 = 125;
+blocking = true;
+}
+
+sidedef // 0
+{
+sector = 0;
+texturemiddle = "STARTAN2";
+}
+
+sidedef // 1
+{
+sector = 0;
+texturemiddle = "STARTAN2";
+}
+
+sidedef // 2
+{
+sector = 0;
+texturemiddle = "STARTAN2";
+}
+
+sidedef // 3
+{
+sector = 0;
+texturemiddle = "STARTAN2";
+}
+
+sidedef // 4
+{
+sector = 0;
+}
+
+sidedef // 5
+{
+sector = 1;
+texturebottom = "STARTAN2";
+}
+
+sidedef // 6
+{
+sector = 0;
+}
+
+sidedef // 7
+{
+sector = 1;
+texturebottom = "STARTAN2";
+}
+
+sidedef // 8
+{
+sector = 0;
+}
+
+sidedef // 9
+{
+sector = 1;
+texturebottom = "STARTAN2";
+}
+
+sidedef // 10
+{
+sector = 0;
+}
+
+sidedef // 11
+{
+sector = 1;
+texturebottom = "STARTAN2";
+}
+
+sidedef // 12
+{
+sector = 2;
+texturemiddle = "STARTAN2";
+}
+
+sidedef // 13
+{
+sector = 2;
+texturemiddle = "STARTAN2";
+}
+
+sidedef // 14
+{
+sector = 2;
+texturemiddle = "STARTAN2";
+}
+
+sector // 0
+{
+heightfloor = 0;
+heightceiling = 128;
+texturefloor = "FLOOR0_1";
+textureceiling = "CEIL1_1";
+lightlevel = 192;
+}
+
+sector // 1
+{
+heightfloor = -128;
+heightceiling = 128;
+texturefloor = "FLOOR0_1";
+textureceiling = "CEIL1_1";
+lightlevel = 192;
+id = 1;
+}
+
+sector // 2
+{
+heightfloor = -128;
+heightceiling = -16;
+texturefloor = "FLOOR0_1";
+textureceiling = "FWATER1";
+lightlevel = 192;
+fadecolor = 681400;
+}
+
