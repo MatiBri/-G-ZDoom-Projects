@@ -1,0 +1,3 @@
+//Este es un ejemplo de como hacer suelos y rampas 3D en Doom con formato UDMF
+//No se suele usar mucho este metodo, por lo que se cree que en futuras actuali
+//zaciones, podria llegar a ser obsoleta
