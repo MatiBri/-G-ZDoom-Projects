@@ -1,0 +1,30 @@
+//SNDSEQ = Sound Sequence. Osea, una secuencia de sonidos
+
+:ParedQueRota
+	door 0 //El numero se refiere al numero de sound sequence
+	play LFTSTART
+	stopsound LFTSTOP
+end
+
+:RocaMoviendose
+	door 1
+	playrepeat FLRMOVE
+end
+
+:PuertaDeslizanteAbriendose
+	play DROPEN
+	nostopcutoff
+end
+
+:PuertaDeslizanteCerrandose
+	play DRCLOSE
+	nostopcutoff
+end
+
+[PuertaDeslizante
+	door 2
+	0 PuertaDeslizanteAbriendose
+	1 PuertaDeslizanteCerrandose
+	2 PuertaDeslizanteAbriendose
+	3 PuertaDeslizanteCerrandose
+]
