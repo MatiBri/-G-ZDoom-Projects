@@ -1,0 +1,15 @@
+#include "zcommon.acs"
+//El mapa usa un efecto llamado Low Friction (Numero 79) que permite determinar
+//a que velocidad cualquier objeto y jugador en el area se deslizara
+
+script 1 OPEN {
+	//Creo un efecto de neblina en el mapa, utilizando esta funcion que setea
+	//el color de la luz en los sectores etiquetados, usando RGB
+	Sector_SetFade(1, 100,100,100);
+}
+
+script 2 ENTER {
+	//Al iniciar el mapa, se abrira la puerta con la etiqueta 2 en una veloci
+	//dad de 30 (velocidad estandar).
+	Door_Open(2,30,0);
+}
