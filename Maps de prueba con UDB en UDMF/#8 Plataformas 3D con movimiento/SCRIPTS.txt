@@ -1,0 +1,40 @@
+#include "zcommon.acs"
+
+script 1 ENTER {
+	//Mientras que el suelo del tag 3 es mas grande que el height de 8
+	while (GetSectorFloorZ(3,0,0)>8.0) {
+
+		//El height del player usualmente suele ser de 56.0 units
+		//El siguiente script es para evitar un glitch en la plataforma si es que
+		//El jugador esta debajo de la misma, lo aplastara y lo matara
+		Thing_ChangeTID(0,1337); //0 es el viejo id del player, 1337 es el nuevo
+
+
+		//Si el jugador esta dentro del sector
+		if(ThingCountSector(0,1337,1)>0 && GetActorZ(1337)==0.0 && GetSectorFloorZ(3,0,0)<=56.0)
+		{
+			Thing_Destroy(1337,0);
+		}
+		else{
+			//Bajo la plataforma
+			Floor_LowerByValue(3,10,1);
+			Ceiling_LowerByValue(3,10,1);
+		}
+
+		Delay(1);
+	}
+
+	Delay(125);
+	//Luego de que la plataforma baje
+	while (GetSectorFloorZ(3,0,0)<232.0) {
+		//Esta volvera a subir la misma en su estado habitual
+		Floor_RaiseByValue(3,10,1);
+		Ceiling_RaiseByValue(3,10,1);
+
+		Delay(1);
+	}
+
+	Delay(125);
+	//Y se reiniciara la secuencia para que la plataforma suba y baje
+	Restart;
+}
