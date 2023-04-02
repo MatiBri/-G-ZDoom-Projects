@@ -1,0 +1,24 @@
+//EL MODELO FUNCIONA, PERO AL NO TENER UN UV PARA EL OBJETO NO MOSTRARÁ MUY BIEN
+// LAS TEXTURAS
+
+/*
+Requisitos que debe tener un modelo para poder importarse:
+	
+	1)Un modelo en formato MD3 (Model Quake 3, al menos este me funcionó)
+	2)Mapeado UV del objeto
+	3)Una definición en los bloques: MODELDEF, DECORATE O Zscript(creo) y TEXTURES 
+*/
+
+
+Model cubo
+{
+	Path "models"
+    Model 0 "cubo.md3"
+	Skin 0 "bar_seat.jpg"
+	Scale 70.0 70.0 70.5
+	ROTATING
+	USEACTORPITCH
+	USEACTORROLL
+
+	FrameIndex MDLA A 0 0
+}

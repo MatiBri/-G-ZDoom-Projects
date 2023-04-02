@@ -1,0 +1,75 @@
+//Sonido de puertas standard
+
+//:DoorOpenNormal
+//	door	door 1
+//	play	doors/dr1_open
+//	nostopcutoff
+//end
+
+/*:DoorOpenBlazing
+	door	door 2
+	play	doors/dr2_open
+	nostopcutoff
+end*/
+
+
+//Secuencia de puertas Abierta/Cerrada
+[DoorNormal
+	Door 0
+	0	DoorOpenNormal
+	1	DoorCloseNormal
+	2	DoorOpenBlazing
+	3	DoorCloseBlazing
+]
+
+[DoorTurbo
+	Door 1
+	0	DoorOpenBlazing
+	1	DoorCloseBlazing
+	2	DoorOperBlazing
+	3	DoorCloseBlazing
+]
+
+
+//Secuencia de lluvia
+/*
+:rain_sequence
+   playrepeat	rain_sound
+   //attenuation normal
+   //attenuation idle
+   //attenuation static
+   attenuation surround
+end
+
+:thunder_ambient_1
+   playuntildone thunder_sound_1
+end
+
+:thunder_ambient_2
+   playuntildone thunder_sound_2
+end
+
+:thunder_ambient_3
+   playuntildone thunder_sound_3
+end
+
+:thunder_ambient_4
+   playuntildone thunder_sound_4
+end
+
+:thunder_ambient_5
+   playuntildone thunder_sound_5
+end
+
+:thunder_ambient_6
+   playuntildone thunder_sound_6
+end
+
+:thunder_ambient_7
+   playuntildone thunder_sound_7
+end
+
+:thunder_ambient_8
+   playuntildone thunder_sound_8
+end
+*/

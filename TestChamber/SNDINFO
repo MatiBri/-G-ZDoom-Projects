@@ -1,0 +1,67 @@
+//Sonido de viento de BouncyTEM
+
+wind	wind	// Gentle Cold Wind
+
+$AMBIENT 17 wind POINT 1.5 CONTINUOUS 1.0
+
+//------------------------
+
+//Escopeta hecha por Xim
+weapons/Xshotgr		XMSGCOCK
+weapons/Xshotgf		XMSHOTGN
+
+//Female Scientist
+fem/sight FEMZSIT
+fem/pain FEMZPAIN
+fem/death FEMZDHT
+fem/active FEMZACT
+KnifeHit DSKNIFE
+
+//Crow sound
+
+CRWFLP CRWFLP
+
+CRWCAW1 CRWCAW1
+$Limit CRWCAW1	0
+
+CRWCAW2 CRWCAW2
+$Limit CRWCAW2	0
+
+CRWCAW3 CRWCAW3
+$Limit CRWCAW3 0
+
+
+//Sonidos de climas (Nieve, lluvia, etc)
+/*
+thunder_sound_1 "sounds/Lighting_Strike_1.ogg"
+thunder_sound_2 "sounds/Lighting_Strike_2.ogg"
+thunder_sound_3 "sounds/Lighting_Strike_3.ogg"
+thunder_sound_4 "sounds/Lighting_Strike_4.ogg"
+thunder_sound_5 "sounds/Lighting_Strike_5.ogg"
+thunder_sound_6 "sounds/Lighting_Strike_6.ogg"
+thunder_sound_7 "sounds/Lighting_Strike_7.ogg"
+thunder_sound_8 "sounds/Lighting_Strike_8.ogg"
+
+$attenuation thunder_sound_1 0.3
+$attenuation thunder_sound_2 0.3
+$attenuation thunder_sound_3 0.3
+$attenuation thunder_sound_4 0.3
+$attenuation thunder_sound_5 0.3
+$attenuation thunder_sound_6 0.3
+$attenuation thunder_sound_7 0.3
+$attenuation thunder_sound_8 0.3
+
+$rolloff thunder_sound_1 linear 1500 4000 
+$rolloff thunder_sound_2 linear 1500 4000 
+$rolloff thunder_sound_3 linear 1500 4000 
+$rolloff thunder_sound_4 linear 1500 4000 
+$rolloff thunder_sound_5 linear 1500 4000 
+$rolloff thunder_sound_6 linear 1500 4000 
+$rolloff thunder_sound_7 linear 1500 4000 
+$rolloff thunder_sound_8 linear 1500 4000 
+
+
+rain_sound "sounds/rain_sound.ogg"
+
+$rolloff rain_sound linear 150 400
+*/

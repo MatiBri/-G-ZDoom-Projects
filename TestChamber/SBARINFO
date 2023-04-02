@@ -1,0 +1,7 @@
+/*
+Statusbar Normal
+{
+	DrawNumber 3, HUDFONT_RAVEN, White, health, fillzeros, 20, 160;
+	DrawString CONFONT, Olive, "Health", 0, 190, 0, alignment(left);
+}
+*/

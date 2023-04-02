@@ -1,0 +1,10 @@
+//Skytextures
+Skybox SkyP fliptop 
+{
+	front
+	right
+	back
+	left
+	top
+	bottom
+}

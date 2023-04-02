@@ -1,0 +1,51 @@
+CLEARLOCKS //Esto hace que las llaves clásicas se mantengan usables en el juego después de añadir llaves personalizadas
+
+Lock 1 Doom
+{
+  Any { RedCard D3RedCard }
+  Message "You need a red card to open this door"
+  RemoteMessage "You need a red card to activate this object"
+  Mapcolor 255 0 0
+}
+
+Lock 2 Doom
+{
+  Any { BlueCard D3BlueCard }
+  Message "You need a blue card to open this door"
+  RemoteMessage "You need a blue card to activate this object"
+  Mapcolor 0 0 255
+}
+
+Lock 3 Doom
+{
+  Any { YellowCard D3YellowCard }
+  Message "You need a yellow card to open this door"
+  RemoteMessage "You need a yellow card to activate this object"
+  Mapcolor 255 255 0
+}
+
+Lock 7 Doom
+{
+	D3BlackCard
+	Message "You need a black card to open this door!"
+	RemoteMessage "You need a black card to activate this object!"
+	Mapcolor 32 32 32
+}
+
+
+Lock 10 Doom
+{
+	D3WhiteCard
+	Message "You need a white card to open this door!"
+	RemoteMessage "You need a white card to activate this object!"
+	Mapcolor 255 255 255
+}
+
+
+Lock 12 Doom
+{
+	D3VioletCard
+	Message "You need a violet card to open this door!"
+	RemoteMessage "You need a violet card to activate this object!"
+	Mapcolor 159 0 255
+}

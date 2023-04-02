@@ -1,0 +1,161 @@
+//Mapinfo
+
+//Custom HUD
+GameInfo {
+	statusbarclass = "MinimalStatusBar"
+}
+
+
+//MAPAS
+map NMAP01 "Mapa de prueba" //Cuando añades un MAPINFO, todas las cosas que agregues dentro del map se reflejará en el juego
+{
+	AllowRespawn
+	Grinding_Polyobj
+	Par = 20 //Par 20 sigfinica el tiempo que toma en finalizar el mapa. Aparece como speedrun al final de cada mapa
+	Music = D_RUNNIN
+	Next = NMAP02
+	SecretNext = NMAP02
+	Cluster = 20 //5 es el Cluster por defecto en DooM 2. Un cluster es básicamente una manera de agrupar los mapas. Se puede usar para crear episodios, por ejemplo una vez que llegas al Map05, habrá una pantalla intermission  con un texto.
+	//Tambien se pueden usar los Clusters para hacer Hubs(*Investigar éste último).
+	//En este caso, estoy setando el Cluster con un valor de 20 junto al Map02, sólo para agruparlos en un mismo valor
+	
+	//sky1 = "SKY1" la textura en UDB
+	Sky1 = SkyP, 0.1 // Si cambias el nombre del Skybox, necesitarás cambiar el nombre del mismo en el apartado de OpenGL defs
+		SkyRotate = 0.1, 0.1, 0.1
+		
+	/*weather = snow;
+    intensity = 1;*/
+}
+
+
+map NMAP02 "Mapa de prueba 2"
+{
+	Next = NMAP01
+	SecretNext = NMAP01
+	AllowRespawn
+	Grinding_Polyobj
+	Cluster = 20
+	Par = 20 //Par 20 sigfinica el tiempo que toma en finalizar el mapa. Aparece como speedrun al final de cada mapa
+	Music = D_DOOM
+	//Next = EndGame
+}
+
+
+//******CLUSTERS******//
+///Acá añadimos nuestra definición de los Clusters
+cluster 20
+{
+	Flat = "$BGFLAT11"
+	Music = d_dm2ttl
+	ExitText = "Prueba de ExitText con",
+	"el grupo de mapas del Cluster 20"
+}
+
+//Texto del ending del mapa. En este caso no lo uso porque cambié el Cluster del grupo de mapas del 1 al 20
+Cluster 1
+{
+	//Pic = INTERPIC
+	Flat = TILE01
+	Music = d_dm2ttl
+	ExitText = "Texto de prueba que muestra el Exit test del juego"
+}
+
+//******EPISODIOS******//
+//Definición de Episodios
+Episode NMAP01
+{
+	Name = "Episodio 1 de prueba"
+	Key = "E"
+	
+}
+
+//******CLIMA******//
+/*
+gameinfo
+{
+	AddEventHandlers = "weather_event"
+}
+*/
+
+//Estas son las dificultades para los mapas en el juego
+
+ClearSkills
+
+skill baby
+{
+	name = "sos malo en los FPS"
+	MustConfirm = "Estas seguro de jugar en este modo? Vas a caer muy bajo"
+	HealthFactor = 2.0
+	ArmorFactor = 2.0
+	AmmoFactor = 2.0
+	DropAmmoFactor = 2.0
+	DamageFactor = 0.5
+	SpawnFilter = baby
+	MonsterHealth = 0.5
+	Key = 1
+}
+
+skill easy
+{
+	name = "Y... la sabes remar"
+	HealthFactor = 1.5
+	ArmorFactor = 1.5
+	AmmoFactor = 1.5
+	DropAmmoFactor = 1.5
+	SpawnFilter = easy
+	MonsterHealth = 0.8
+	Key = 2
+}
+
+skill normal
+{
+	Name = "No tenes miedo de disparar"
+	HealthFactor = 1.0
+	ArmorFactor = 1.0
+	AmmoFactor = 1.0
+	DropAmmoFactor = 1.0
+	SpawnFilter = normal
+	MonsterHealth = 1.0
+	Key = 3
+	DefaultSkill
+}
+
+skill hard
+{
+	Name = "Lo tuyo es matar"
+	AmmoFactor = 1.5
+	DamageFactor = 1.5
+	SpawnFilter = hard
+	MonsterHealth = 1.5
+	MustConfirm = "Tenes las pelotas suficientes para jugar en este nivel de dificultad?"
+	Key = 5
+}
+
+Skill nightmare
+{
+	Name = "DOOMSLAYER"
+	AmmoFactor = 1.0
+	DamageFactor = 2.0
+	SpawnFilter = nightmare
+	MonsterHealth = 2.0
+	MustConfirm = "Te van a cagar a trompadas, estas seguro de continuar?"
+	Key = 5
+}
+
+//Doom Editor numbers van acá
+DoomEdNums
+{
+	//Armas
+	15000 = PumpActionShotgun
+	
+	//Monstruos
+	15010 = FemaleScientist
+	
+	//Llaves
+	15020 = D3BlueCard
+	15021 = D3RedCard
+	15022 = D3YellowCard
+	15023 = D3BlackCard
+	15024 = D3WhiteCard
+	15025 = D3VioletCard
+}

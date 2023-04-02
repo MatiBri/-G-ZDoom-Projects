@@ -1,0 +1,27 @@
+//Switches van aquí
+
+//Toggle switch. En este caso el switch funciona como un marcador que indicará que la textura ES un botón ¡NO se debe borrar!
+
+//Llave azúl
+switch BLUKEY02 on sound Switch1 pic BLUKEY04 tics 0
+switch BLUKEY04 off sound Switch2 pic BLUKEY02 tics 0
+
+//Switch animado - Llave negra
+//switch doom sw1nj15 //Switch doom es un filtro para decirnos que sólo trabajamos en Doom.
+//No lo necesitamos porque SÓLO estamos trabajando para Doom, aunque por supuesto, Slade sirve para diferentes motores tales como Half-Life y Quake
+switch BLKKEY02
+on sound switches/Switch1
+pic BLKKEY02 tics 8 
+pic BLKKEY03 tics 8 
+pic BLKKEY04 tics 8 
+
+off sound switches/Switch2
+pic BLKKEY04 tics 8 
+pic BLKKEY03 tics 8 
+pic BLKKEY02 tics 0
+
+//Suelo animado	- Pantalla estática
+flat	STATICY1  	range	STATICY8  	tics 3
+
+//Efecto animado de agua mas realista
+Warp2	Flat	NEWWATER	//1.0 Se puede usar un valor float para determinar la velocidad de la animación

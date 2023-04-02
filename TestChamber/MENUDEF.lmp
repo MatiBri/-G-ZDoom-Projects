@@ -1,0 +1,23 @@
+AddOptionMenu "OptionsMenu"
+{
+	StaticText " "
+	Submenu "GZSHud Options", "GZSOptions"
+}
+
+OptionMenu "GZSOptions"
+{
+	Position -15
+	Title       "GZSHud Options"
+	StaticText "General", 1
+	StaticText ""
+	Slider "HUD Box Alpha", "gzs_boxalpha", 0, 1, 0.1
+	Option "Draw Ammo Bar", "gzs_ammobar", "OnOff"
+	StaticText ""
+	StaticText "Level Stats", 1
+	StaticText ""
+	Option "Secret Count", "gzs_stats_secrets", "OnOff"
+	Option "Monster Count", "gzs_stats_monsters", "OnOff"
+	Option "Item Count", "gzs_stats_items", "OnOff"
+	Option "Level Timer", "gzs_stats_timer", "OnOff"
+	Option "Game Timer", "gzs_stats_gametimer", "OnOff"
+}
